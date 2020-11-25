@@ -30,6 +30,19 @@ plt.ylabel('人数/亿')
 plt.show()
 ```
 ### 折线图(plot)
+
+```python
+import matplotlib.pyplot as plt
+x=[0.5,1,1.5,2,2.5,3,3.5]
+y=[3674.12,6897.573,10595.688,14080.176,17540.664,20858.64,24863.398]
+fig,ax1 = plt.subplots()
+ax1.plot(x,y,marker='s')
+ax1.set_xlabel('E/V')
+ax1.set_ylabel('S/nA')
+plt.show()
+```
+
+双y轴
 ```python
 a2=[i for i in range(2009,2019)]
 b2=[0.3,0.36,0.42,1.12,1.81,2.22,2.6,2.94,3.25,3.65]
