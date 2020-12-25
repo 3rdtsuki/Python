@@ -1,7 +1,8 @@
 ### python生成可执行文件——pyinstaller
-（1）将xxxx.py复制到C:\Users\Zhaowei\AppData\Local\Programs\Python\Python37\Scripts\pyinstaller-develop文件夹里  
-（2）cmd先cd到上述文件夹，再输入python pyinstaller.py -F xxxx.py  
-（3）打开.\pyinstaller-develop\xxxx\dist\xxxx.exe，运行即可  
+（0）pip install pyinstaller
+（1）将xxxx.py复制到C:\Users\Mika\AppData\Local\Programs\Python\Python38\Scripts\xxxx文件夹里  
+（2）cmd先cd到上述文件夹，再输入pyinstaller -F xxxx.py  
+（3）打开.\xxxx\dist\xxxx.exe，运行即可  
 
 ### 安装外部库
 
