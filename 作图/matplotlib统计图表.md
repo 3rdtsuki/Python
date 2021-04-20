@@ -32,14 +32,15 @@ plt.show()
 ### 折线图(plot)
 
 ```python
-import matplotlib.pyplot as plt
 x=[0.5,1,1.5,2,2.5,3,3.5]
 y=[3674.12,6897.573,10595.688,14080.176,17540.664,20858.64,24863.398]
-fig,ax1 = plt.subplots()
-ax1.plot(x,y,marker='s')
-ax1.set_xlabel('E/V')
-ax1.set_ylabel('S/nA')
-plt.show()
+import matplotlib.pyplot as plt
+def make_plot(x,y):
+    fig,ax1 = plt.subplots()
+    ax1.plot(x,y,marker='s')
+    ax1.set_xlabel('E/V')
+    ax1.set_ylabel('S/nA')
+    plt.show()
 ```
 
 双y轴
