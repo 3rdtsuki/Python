@@ -56,3 +56,16 @@ ax2.set_ylabel('人数/亿')
 plt.xticks(a2)
 plt.show()
 ```
+
+### 散点图
+
+```python
+def make_scatter_plot():
+    x1=[1,2,3]
+    y1=[1,2,3]
+    x2=[4,5,6]
+    y2=[6,5,4]
+    plt.scatter(x1, y1, c='blue', alpha=0.4, label='类别A')
+    plt.scatter(x2, y2,  c='red', alpha=0.4, label='类别B')
+    plt.show()
+```
