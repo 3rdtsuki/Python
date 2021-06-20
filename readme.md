@@ -1,3 +1,10 @@
+```python
+镜像：
+阿里云：pip install ... -i https://mirrors.aliyun.com/pypi/simple
+清华：pip install ... -i https://pypi.tuna.tsinghua.edu.cn/simple
+中科大：pip install ... -i https://pypi.mirrors.ustc.edu.cn/simple
+```
+
 存数据：
 
 ```python
@@ -77,12 +84,7 @@ with open(output_path,'a',encoding='utf-8')as fp:
 pip安装
 控制面板\系统和安全\系统\高级系统设置\环境变量\系统变量\Path，双击，加入pip.exe所在路径
 即可使用cmd->pip install ...  
-```python
-镜像：
-阿里云：pip install ... -i https://mirrors.aliyun.com/pypi/simple
-清华：pip install ... -i https://pypi.tuna.tsinghua.edu.cn/simple
-中科大：pip install ... -i https://pypi.mirrors.ustc.edu.cn/simple
-```
+
 setup.py安装
 控制面板\系统和安全\系统\高级系统设置\环境变量\系统变量\Path，双击，加入python37的路径
 打开setup.py文件夹，shift+右键->powershell->python setup.py install
