@@ -32,15 +32,24 @@ plt.show()
 ### 折线图(plot)
 
 ```python
-x=[0.5,1,1.5,2,2.5,3,3.5]
-y=[3674.12,6897.573,10595.688,14080.176,17540.664,20858.64,24863.398]
+import numpy as np
 import matplotlib.pyplot as plt
-def make_plot(x,y):
-    fig,ax1 = plt.subplots()
-    ax1.plot(x,y,marker='s')
-    ax1.set_xlabel('E/V')
-    ax1.set_ylabel('S/nA')
+
+data = np.load('./MMFN_semiChs_0115_NOSM_eval_results.npz')
+eval_loss = data['running_loss']
+eval_accuracy = data['accuracy']
+
+epoch = [i for i in range(1,31)]
+def make_plot(x,y1,y2):
+    plt.plot(x,y1,label='running_loss',marker='x')
+    plt.plot(x,y2,label='accuracy',marker='x')
+    plt.title('result')
+    plt.xlabel('epoch')
+    plt.ylabel('percent')
+    plt.legend()
     plt.show()
+
+make_plot(epoch,eval_loss,eval_accuracy)
 ```
 
 双y轴
